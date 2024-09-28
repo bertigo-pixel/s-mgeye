@@ -43,7 +43,7 @@ section{
 /*HEADER*/
 header{
     width: 100%;
-    background-image: url('/public/fotolar/çilek1.jpeg'); 
+    background-image: url('/fotolar/çilek1.jpeg'); 
     background-size: cover; 
     background-position: center; 
     padding: 20px;
