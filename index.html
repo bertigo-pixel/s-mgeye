@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@112.7,300..700&display=swap" rel="stylesheet">
+    <title>Emmeli Sütlü Şeker</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#">Emmeli Sütlü Şeker</a></h2>
+            </div>
+            <ul class="nav_links"> 
+                <li><a href="#sümeyye">Tanıyalım</a></li>
+                <li><a href="#foto">Fotikler</a></li>
+                <li><a href="#mektup">Mektup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ANASAYFA -->
+    <section id="sümeyye">
+        <div class="inner_anasayfa">
+            <div class="child_anasayfa">
+                <h1>Dünyanın En Büyük Otistiği: <span class="span_child">neon pink haired twink gaon</span></h1>
+                <p>İsmi Sümeyye ama bu büyük bir sır.-Arapçaçünkü- 10a gidiyor ama beyin yaşı 3.<br>Dışarıdan baya havalı aslında ama hayallerinizin yıkılmamasını istiyorsanız yakında tanımayın.<br>İşin özeti tanıdığım en garip tipleme.</p>
+                <a href="https://www.youtube.com/shorts/HvO4dh8PSbg" target="_blank">
+                    <button class="btn">ayayay</button>
+                </a>
+            </div>
+            <div class="child_anasayfa">
+                <img src="/public/fotolar/foto5vol2.png" alt="Çilek" class="rounded-image" style="float: right; margin-left: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Fotolar -->
+    <section id="foto"></section>
+        <h2 class="photo-title">Fotikler</h2>
+        <div class="photo-gallery">
+            <div class="photo-row">
+                <img src="/public/fotolar/foto1.jpeg" alt="Foto 1" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto2.jpeg" alt="Foto 2" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto8.jpeg" alt="Foto 8" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto9.jpeg" alt="Foto 9" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto10.jpeg" alt="Foto 10" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto11.jpeg" alt="Foto 11" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto15.jpeg" alt="Foto 15" onclick="openModal(this.src)">
+            </div>
+            <div class="photo-row">
+                <img src="/public/fotolar/foto17.jpeg" alt="Foto 17" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto13.jpeg" alt="Foto 13" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto20.jpeg" alt="Foto 20" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto19.jpeg" alt="Foto 19" onclick="openModal(this.src)">
+                <img src="/public/fotolar/foto18.jpeg" alt="Foto 18" onclick="openModal(this.src)">
+                <img src="/public/fotolar/24dgözel/dg11.jpeg" alt="Foto 13" onclick="openModal(this.src)">
+                <img src="/public/fotolar/24dgözel/dg3.jpeg" alt="Foto 14" onclick="openModal(this.src)">
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById("modal");
+            const modalImage = document.getElementById("modalImage");
+            modal.style.display = "block"; // Modali göster
+            modalImage.src = src; // Tıklanan fotoğrafın kaynağını ayarla
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none"; // Modali gizle
+        }
+    </script>
+
+<!--Mektup-->
+<!-- Mektup -->
+<section id="mektup">
+    <h2 class="mektup-title">Mektup</h2>
+    <div class="mektup-content">
+        <p>
+            Seninle ne zaman vakit geçirsem, sohbet etsem mutlu oluyorum.
+            Ettiğimiz sohbetin bir önemi yok konun da. 
+            Hem kaliteli sohbetler edilebilen hem de dertlerimi
+            sırlarımı paylaşabileceğim biri oldun sen benim hayatımda.
+            Herhangi bir konu hakkında yorum yapmasan da sana anlatınca 
+            garip bir rahatlama hissi geliyor. Yanında kendimi kasmak
+            zorunda hissetmiyorum, sosyal ankastremi yeniyorum baya. 
+            Ve umarım ki sen de benim için böyle hissediyorsundur. Hayatın
+            boyunca iyi gününde mutluluğunu kötü gününde derdini paylaşmak
+            için elimden geldiğince yanında olcağımı bil. İyi ki doğdun
+            iyi ki varsın iyi ki tanışmışız aşkım benimmmmm.-malsın-
+        </p>
+    </div>
+</section>
+
+
+</body>
+
+</html>
